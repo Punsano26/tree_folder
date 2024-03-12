@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Folder Tree Structure</title>
+    <style>
+        .tree {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="tree-container"></div>
+
+    <script>
+        function displayTree(node, container) {
+            const ulElement = document.createElement('ul');
+            const liElement = document.createElement('li');
+            liElement.textContent = node.name;
+            ulElement.appendChild(liElement);
+
+            if (node.children.length > 0) {
+                node.children.forEach(child => {
+                    const childContainer = document.createElement('div');
+                    childContainer.className = 'tree';
+                    displayTree(child, childContainer);
+                    ulElement.appendChild(childContainer);
+                });
+            }
+
+            container.appendChild(ulElement);
+        }
+
+        const treeContainer = document.getElementById('tree-container');
+        displayTree(root, treeContainer);
+    </script>
+</body>
+</html>

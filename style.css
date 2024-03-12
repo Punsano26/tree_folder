@@ -1,0 +1,67 @@
+.folder, .file {
+    margin-left: 20px;
+}
+
+.folder::before, .file::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-size: cover;
+}
+
+.folder::before {
+    background-image: url('folder-icon.png');
+}
+
+.file::before {
+    background-image: url('file-icon.png');
+}
+/* Style for tree elements */
+.tree-element {
+    margin-left: 20px; /* Adjust the margin for nesting */
+}
+
+/* Style for folder icon */
+.tree-element .fa-folder {
+    color: #007bff; /* Color of folder icon */
+    margin-right: 5px; /* Spacing between icon and text */
+}
+
+/* Style for file icon */
+.tree-element .fa-file {
+    color: #28a745; /* Color of file icon */
+    margin-right: 5px; /* Spacing between icon and text */
+}
+
+/* Style for delete button */
+.tree-element button {
+    background-color: #dc3545; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 3px 8px; /* Padding inside button */
+    margin-left: 5px; /* Spacing between delete button and text */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Style for delete button hover */
+.tree-element button:hover {
+    background-color: #c82333; /* Button background color on hover */
+}
+/* Style for add button */
+.add-button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    padding: 8px 16px; /* Padding inside button */
+    margin-left: 10px; /* Spacing between buttons */
+    cursor: pointer; /* Show pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+/* Style for add button hover */
+.add-button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
