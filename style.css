@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
 .folder, .file {
     margin-left: 20px;
 }
