@@ -1,0 +1,3 @@
+<i class="fa-regular fa-file"></i>
+<i class="fa-duotone fa-file"></i>
+<i class="fa-regular fa-file"></i>
